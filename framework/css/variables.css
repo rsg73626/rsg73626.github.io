@@ -1,0 +1,12 @@
+html {
+
+    /* Theme */
+
+    /* Menu */
+    --menu-size-small: 35px;
+    --menu-size-medium: 44px;
+    --menu-size-large: 56px;
+    --menu-size-extra-large: 64px;
+    --menu-size-extra-extra-large: 128px;
+
+}
