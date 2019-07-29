@@ -10,30 +10,36 @@
 }
 
 .menu-small .menu-open-close-button { 
+    height: var(--menu-size-small); 
     line-height: var(--menu-size-small); 
     padding: 0 calc(var(--menu-size-small) * 0.3);
-
 }
 .menu-medium .menu-open-close-button { 
+    height: var(--menu-size-medium);
     line-height: var(--menu-size-medium);
     padding: 0 calc(var(--menu-size-medium) * 0.3);
 }
 .menu-large .menu-open-close-button { 
+    height: var(--menu-size-large); 
     line-height: var(--menu-size-large); 
     padding: 0 calc(var(--menu-size-large) * 0.3);
 }
 .menu-extra-large .menu-open-close-button { 
+    height: var(--menu-size-extra-large); 
     line-height: var(--menu-size-extra-large); 
     padding: 0 calc(var(--menu-size-extra-large) * 0.3);
 }
 .menu-extra-extra-large .menu-open-close-button { 
+    height: var(--menu-size-extra-extra-large); 
     line-height: var(--menu-size-extra-extra-large); 
     padding: 0 calc(var(--menu-size-extra-extra-large) * 0.3);
 } 
 
 .menu-ul {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    background-color: gray;
+    background-color: var(--menu-background-color);
 }
 
 .menu-a {
@@ -42,12 +48,14 @@
     text-align: center;
     text-decoration: none;
     font-family: 'Arial black';
-    color: lightgray;
+    color: var(--menu-text-color);
 }
 
 .menu-submenu-ul {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    background-color: lightgray;
+    background-color: var(--submenu-background-color);
     display: none;
     z-index: 1000;
 }
@@ -129,14 +137,14 @@
 .menu-extra-extra-large .menu-submenu-ul .menu-li { height: var(--menu-size-extra-extra-large); }
 
 .menu-submenu-ul .menu-li .menu-a {
-    color: gray;
+    color: var(--submenu-text-color);
 }
 
-.menu-li:hover { background-color: lightgray; }
-.menu-li:hover .menu-a { color: gray; }
+.menu-li:hover { background-color: var(--menu-background-color-hover); }
+.menu-li:hover .menu-a { color: var(--menu-text-color-hover); }
 
-.menu-submenu-ul .menu-li:hover { background-color: gray; }
-.menu-submenu-ul .menu-li:hover .menu-a { color: lightgray; }
+.menu-submenu-ul .menu-li:hover { background-color: var(--submenu-background-color-hover); }
+.menu-submenu-ul .menu-li:hover .menu-a { color: var(--submenu-text-color-hover); }
 
-.menu-a:active, .menu-a:visited { color: lightgray; }
+.menu-a:active, .menu-a:visited { color: var(--menu-text-color); }
 

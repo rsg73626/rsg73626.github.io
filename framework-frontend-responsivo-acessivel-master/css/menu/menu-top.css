@@ -21,9 +21,9 @@
 }
 
 .menu-small .menu-li, .menu-small .menu-item-with-suboptions { height: var(--menu-size-small); }
-.menu-small .menu-li, .menu-medium .menu-item-with-suboptions { height: var(--menu-size-medium); }
-.menu-small .menu-li, .menu-large .menu-item-with-suboptions { height: var(--menu-size-large); }
-.menu-small .menu-li, .menu-extra-large .menu-item-with-suboptions { height: var(--menu-size-extra-large); }
-.menu-small .menu-li, .menu-extra-extra-large .menu-item-with-suboptions { height: var(--menu-size-extra-extra-large); } 
+.menu-medium .menu-li, .menu-medium .menu-item-with-suboptions { height: var(--menu-size-medium); }
+.menu-large .menu-li, .menu-large .menu-item-with-suboptions { height: var(--menu-size-large); }
+.menu-extra-large .menu-li, .menu-extra-large .menu-item-with-suboptions { height: var(--menu-size-extra-large); }
+.menu-extra-extra-large .menu-li, .menu-extra-extra-large .menu-item-with-suboptions { height: var(--menu-size-extra-extra-large); } 
 
 
