@@ -10,7 +10,7 @@ function getHeaderObjects() {
     const instalation = mi('Instalação', '#')
     const functioning = mi('Funcionamento', '#')
     const tags = mi('Tags', '#')
-    const getstarted = mi('Como usar?', '/docs/framework-documentacao/getstarted/getstarted.html', [instalation, functioning, tags])
+    const getstarted = mi('Como usar?', /*'/docs/framework-documentacao/getstarted/getstarted.html'*/ null, [instalation, functioning, tags])
 
     const mainMenu = mn([home, about, accessibility, getstarted])
     mainMenu.size = menu_large
