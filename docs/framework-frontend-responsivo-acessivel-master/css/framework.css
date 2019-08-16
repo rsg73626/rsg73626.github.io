@@ -1,7 +1,7 @@
 
-@import "reset.css";
-@import "variables.css";
-@import "html.css";
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./base/html.css";
 
 /* Menu */
 
