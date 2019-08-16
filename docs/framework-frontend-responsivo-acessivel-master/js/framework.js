@@ -269,7 +269,9 @@ function _addOtherPropertiesToTag(tag, content) {
             property == 'grid' ||
             property == 'size' || 
             property == 'icon_side' ||
-            property == 'suboptions_icon') { continue }
+            property == 'suboptions_icon' ||
+            property == 'content' ||
+            property == 'type') { continue }
         const value = content[property]
         if (isString(property)) {
             if (isString(value) || isNumber(value)) {
@@ -415,7 +417,7 @@ function _addFormComplements(tag, object) {
     _addFormGrid(tag, object)
 
     // INPUT LABEL ALIGNMENT
-    var labelAlignment = object.label_alignment
+    var labelAlignment = object.label_alignment 
     if (labelAlignment != up && labelAlignment != left) { labelAlignment = up }
     addGlobalStyles([ style('display', 'flex'),
                       style('flex-direction', labelAlignment == up ? column : row),
@@ -480,16 +482,16 @@ function _tagForObjectWithTypes(object, types) {
 
     const content = type != _menu_ ? object.content : object
     if (typeof object.button_size != _UNDEFINED) { content.button_size = object.button_size } else { content.button_size = button_small }
-    if (typeof object.label_alignment != _UNDEFINED) { content.label_alignment = object.label_alignment } else { content.label_alignment = left }
+    // if (typeof object.label_alignment != _UNDEFINED) { content.label_alignment = object.label_alignment } else { content.label_alignment = left }
     if (typeof object.input_size != _UNDEFINED) { content.input_size = object.input_size } else { content.input_size = input_small }
     if (typeof object.container != _UNDEFINED) { content.container = object.container != null ? object.container : true } else { content.container = true }
     if (typeof object.container_alignment != _UNDEFINED) { content.container_alignment = object.container_alignment != null ? object.container_alignment : line } else {content.container_alignment = line }
     if (typeof object.option_size != _UNDEFINED) { content.option_size = object.option_size } else { content.option_size = option_small }
 
     var tag = _tagWithTypeInTypesForObject(type, types, content)
-    if (type == _form_) { _addFormComplements(tag, object) }
     _addIdAndClassToTag(tag, object)
     _addOtherPropertiesToTag(tag, object)
+    if (type == _form_) { _addFormComplements(tag, object) }
 
     return tag
 }
@@ -1357,7 +1359,7 @@ function _input(content) {
                 labelTag.append(spanTag)
                 labelTag.append(input)
                 labelTag.addClass('input-label')
-                if (labelAlignment == up || labelAlignment == left) {
+                if (labelAlignment == up || labelAlignment == left) { 
                     $(labelTag).css('display', 'flex') 
                     $(labelTag).css('flex-direction', labelAlignment == up ? column : row) 
                     $(labelTag).css('justify-content', 'flex-start')
@@ -1777,7 +1779,7 @@ function _mn(object) {
         openCloseMenuButton.addClass('menu-open-close-button')
         openCloseMenuButton.prop('aria-haspopup', 'true') 
         openCloseMenuButton.attr('aria-controls', thisMenuId) 
-        openCloseMenuButton.attr('onclick', 'menuOpenCloseButtonOnClick(this)')
+        openCloseMenuButton.attr('onclick', '_menuOpenCloseButtonOnClick(this)')
         nav.append(openCloseMenuButton)
 
         if (isString(size) && 
@@ -1854,10 +1856,10 @@ function _mi(content, suboptionsIcon) {
                 li.removeClass()
                 li.addClass('menu-item-with-suboptions')
 
-                li.attr('onmouseover', 'menuItemOnMouseHover(this)')
-                li.attr('onmouseleave', 'menuItemOnMouseLeave(this)')
-                a.attr('onclick', 'menuItemWithSuboptionsOnclick(this)')
-                a.attr('onfocus', 'onFocus(this)')
+                li.attr('onmouseover', '_menuItemOnMouseHover(this)')
+                li.attr('onmouseleave', '_menuItemOnMouseLeave(this)')
+                a.attr('onclick', '_menuItemWithSuboptionsOnclick(this)')
+                a.attr('onfocus', '_onFocus(this)')
                 
                 if (suboptionsIcon) {
                     var shrinkExpandIcon = $('<i>')
@@ -1899,7 +1901,7 @@ function _mi(content, suboptionsIcon) {
     }
 }
 
-function menuOpenCloseButtonOnClick(button) {
+function _menuOpenCloseButtonOnClick(button) {
     const menu = $(button).siblings('.menu-ul')[0]
     if ($(menu).css('display') == 'grid') {
         $(menu).css('display', 'none')
@@ -1910,29 +1912,29 @@ function menuOpenCloseButtonOnClick(button) {
     }
 }
 
-function isSubmenuExpanded(menuItem) {
+function _isSubmenuExpanded(menuItem) {
     const submenu = $(menuItem).children('.menu-submenu-ul')
     if (isObject(submenu) && $(submenu).css('display') == 'block') {
         return true
     } else { return false }
 }
 
-function setExpandIcon(icon) {
+function _setExpandIcon(icon) {
     $(icon).removeClass('fa fa-chevron-up fa-lg')
     $(icon).addClass('fa fa-chevron-down fa-lg')
 }
 
-function setShrinkIcon(icon) {
+function _setShrinkIcon(icon) {
     $(icon).removeClass('fa fa-chevron-down fa-lg')
     $(icon).addClass('fa fa-chevron-up fa-lg')
 }
 
-function expandMenu(menuItem, isHoverAction, updateFocus) {
+function _expandMenu(menuItem, isHoverAction, updateFocus) {
     const link = $(menuItem).children('.menu-a')[0]
     const shrinkExpandIcon = $(link).children('.menu-a-i-suboptions')[0]
     const submenu = $(menuItem).children('.menu-submenu-ul')[0]
     $(submenu).css('display', 'block')
-    setShrinkIcon(shrinkExpandIcon)
+    _setShrinkIcon(shrinkExpandIcon)
     if (isHoverAction) {
         $(menuItem).css('background-color', 'var(--menu-background-color-hover)')
         $(link).css('color', 'var(--menu-text-color-hover)')
@@ -1947,12 +1949,12 @@ function expandMenu(menuItem, isHoverAction, updateFocus) {
     }
 }
 
-function shrinkMenu(menuItem, isHoverAction, updateFocus) {
+function _shrinkMenu(menuItem, isHoverAction, updateFocus) {
     const link = $(menuItem).children('.menu-a')[0]
     const shrinkExpandIcon = $(link).children('.menu-a-i-suboptions')[0]
     const submenu = $(menuItem).children('.menu-submenu-ul')[0]
     $(submenu).css('display', 'none')
-    setExpandIcon(shrinkExpandIcon)
+    _setExpandIcon(shrinkExpandIcon)
     $(link).attr('aria-expanded', 'false')
     if (isHoverAction) {
         $(menuItem).css('background-color', 'var(--menu-background-color)')
@@ -1963,22 +1965,22 @@ function shrinkMenu(menuItem, isHoverAction, updateFocus) {
     }
 }
 
-function menuItemOnMouseHover(menuItem) { expandMenu(menuItem, true) }
+function _menuItemOnMouseHover(menuItem) { _expandMenu(menuItem, true) }
 
-function menuItemOnMouseLeave(menuItem) { shrinkMenu(menuItem, true) } 
+function _menuItemOnMouseLeave(menuItem) { _shrinkMenu(menuItem, true) } 
 
-function onFocus(link) {
+function _onFocus(link) {
     const menuItem = $(link).parent()
     if ($(menuItem).hasClass('menu-item-with-suboptions')) {
         $(menuItem).attr('onkeydown', '_menuItemOnkeydown(this, event)')
     }
 }
 
-function menuItemWithSuboptionsOnclick(link) {
-    if (isSubmenuExpanded($(link).parent())) {
-        shrinkMenu($(link).parent(), false, true)
+function _menuItemWithSuboptionsOnclick(link) {
+    if (_isSubmenuExpanded($(link).parent())) {
+        _shrinkMenu($(link).parent(), false, true)
     } else {
-        expandMenu($(link).parent(), false, true)
+        _expandMenu($(link).parent(), false, true)
     }
 }
 
@@ -2032,7 +2034,7 @@ function _sub_menuItemOnkeydown(menuItem, link, parent, keycode) {
             $(menuItemWithSuboptions).parent(), 
             keycode)
     } else if (keycode == _esc) {
-        shrinkMenu(menuItemWithSuboptions, false, true)
+        _shrinkMenu(menuItemWithSuboptions, false, true)
     }
 }
 
@@ -2055,10 +2057,10 @@ function _submenuItemOnkeydownLeftOrRight(menuItem, link, parent, keycode) {
         }
     }
     if ($(next).hasClass('menu-item-with-suboptions')) {
-        expandMenu(next, false, false)
+        _expandMenu(next, false, false)
     } 
     $(next).children('.menu-a')[0].focus()
-    shrinkMenu(menuItem, false, false)
+    _shrinkMenu(menuItem, false, false)
 }
 
 function _menuItemWithSubOptionsOnkeydown(menuItem, link, parent, keycode) {
@@ -2073,19 +2075,19 @@ function _menuItemWithSubOptionsOnkeydown(menuItem, link, parent, keycode) {
         const submenuFirstLink = $(submenuFirstItem).children('.menu-a')[0]
         const submenuLastItem = allSubmenuItems[amountOfSubmenuItems-1]
         const submenuLastLink = $(submenuLastItem).children('.menu-a')[0]
-        if ((keycode == _esc) && isSubmenuExpanded(menuItem)) {
+        if ((keycode == _esc) && _isSubmenuExpanded(menuItem)) {
             $(submenu).css('display', 'none')
             $(link).attr('aria-expanded', 'false')
-            setExpandIcon(shrinkExpandIcon)
+            _setExpandIcon(shrinkExpandIcon)
         } else if (keycode == _down_arrow || keycode == _enter || keycode == _space) {
             $(submenu).css('display', 'block')
-            setShrinkIcon(shrinkExpandIcon)
+            _setShrinkIcon(shrinkExpandIcon)
             $(submenuFirstLink).focus()
             $(link).attr('aria-expanded', 'true')
             $(menuItem).removeAttr('onkeydown')
         } else if (keycode == _up_arrow) {
             $(submenu).css('display', 'block')
-            setShrinkIcon(shrinkExpandIcon)
+            _setShrinkIcon(shrinkExpandIcon)
             $(submenuLastLink).focus()
             $(link).attr('aria-expanded', 'true')
             $(menuItem).removeAttr('onkeydown')
