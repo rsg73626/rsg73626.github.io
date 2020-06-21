@@ -3,7 +3,7 @@
 
 class Node {
 
-    static _id = 0
+    // static _id = 0
 
     constructor(value = null, weight = null) {
         this.id          = ++Node._id
@@ -38,6 +38,8 @@ class Node {
     }
     
 }
+
+Node._id = 0
 
 
 

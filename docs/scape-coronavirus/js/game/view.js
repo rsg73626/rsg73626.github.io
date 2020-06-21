@@ -269,6 +269,7 @@ class GameView {
 
 class GameViewController {
 
+    /*
     static personMessage = ' 👦 PESSOA 👩 \n\n' +
                            ' ▪️ O triangulo amarelo representa a Pessoa. \n' + 
                            ' ▪️ Sua posição é fixa. \n' + 
@@ -290,6 +291,7 @@ class GameViewController {
                               ' ▪️ O Coronavírus não pode passar por um obstáculo. \n' +
                               ' ▪️ Posicione todos os obstáculos no tabueleiro e clique e "JOGAR". \n' + 
                               ' ▪️ Não é possível colocar obstáculos no tabuleiro enquanto o Coronavírus está se movendo.'    
+    */
 
     constructor(boardSize) {
         this.board                    = new Board(boardSize)
@@ -467,3 +469,24 @@ class GameViewController {
 
 }
 
+GameViewController.personMessage = ' 👦 PESSOA 👩 \n\n' +
+                                    ' ▪️ O triangulo amarelo representa a Pessoa. \n' + 
+                                    ' ▪️ Sua posição é fixa. \n' + 
+                                    ' ▪️ Seu objetivo é impedir que o Coronavírus chague até a Pessoa. \n' + 
+                                    ' ▪️ Faça isso colocando obstáculos entre a Pessoa e o Coronavírus no tabuleiro. \n' + 
+                                    ' ▪️ Adicione um obstáculo clicando em qualquer posição vazia do tabuleiro.'
+
+GameViewController.shortCoronavirusMessage = ' 🦠 CORONAVÍRUS 🦠 \n\n' + 
+                                                ' ▪️ O círculo verde representa o Coronavírus. \n' + 
+                                                ' ▪️ Ele pode se mover para cima, para baixo, para esquerda e para a direita.'
+
+GameViewController.coronavirusMessage = GameViewController.shortCoronavirusMessage + ' \n' + 
+                                ' ▪️ Seu objetivo é impedir que o Coronavírus chague até a Pessoa. \n' + 
+                                ' ▪️ Faça isso colocando obstáculos entre a Pessoa e o Coronavírus no tabuleiro. \n' + 
+                                ' ▪️ Adicione um obstáculo clicando em qualquer posição vazia do tabuleiro.'
+
+GameViewController.obstaclesMessage = ' 🚫 OBSTÁCULOS 🚫 \n\n' + 
+                              ' ▪️ Os lonsagulos cinzas representam os obstáculos. \n' + 
+                              ' ▪️ O Coronavírus não pode passar por um obstáculo. \n' +
+                              ' ▪️ Posicione todos os obstáculos no tabueleiro e clique e "JOGAR". \n' + 
+                              ' ▪️ Não é possível colocar obstáculos no tabuleiro enquanto o Coronavírus está se movendo.' 
