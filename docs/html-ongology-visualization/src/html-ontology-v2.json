@@ -1,0 +1,814 @@
+[ {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Document_Metadata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Edit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Interactive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Scripting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#abbr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#accept-charset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#accesskey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#area",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#aside",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#async",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#audio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#autocomplete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#autofocus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#base",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Document_Metadata" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#bdi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#bdo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#blockquote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#body",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#br",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#button",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#canvas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Scripting" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#caption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#cite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#cite_attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#col",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#colgroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#cols",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#colspan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#contenteditable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#controls",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#crossorigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#data-*",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#datalist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#datetime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#dd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#defer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#del",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Edit" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#details",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Interactive" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#dfn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#dialog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Interactive" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#dir",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#dirname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#disabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#div",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#dl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#draggable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#dt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#em",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#embed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#fieldset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#figcaption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#figure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#footer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#for",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#form",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#form_attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#formaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#formenctype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#formmethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#formnovalidate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#formonvalidate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#formtarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#h1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#h2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#h3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#h4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#h5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#h6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#head",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Document_Metadata" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#header",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#headers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#height",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#hidden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#hight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#hr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#href",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#html",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Document" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#i",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#iframe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#img",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#input",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ins",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Edit" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#kbd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#kind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#lang",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#legend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#li",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#link",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Document_Metadata" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#list",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#listbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#main",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#map",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#mark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#max",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#maxlength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#meta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Document_Metadata" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#meter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#method",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#min",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#minlength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#multiple",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#nav",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#nonce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#noscript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Scripting" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#novalidate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onabort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onauxclick",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onblur",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#oncancel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#oncanplay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#oncanplaythrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onchange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onclick",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onclose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#oncuechange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondblclick",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondrag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondragend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondragenter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondragexit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondragleave",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondragover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondragstart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondrop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ondurationchange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onemptied",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onerror",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onfocus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#oninput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#oninvalid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onkeydown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onkeypress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onkeyup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onload",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onloadeddata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onloadedmetadata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onloadend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onloadstart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onmousedown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onmouseenter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onmouseleave",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onmousemove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onmouseout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onmouseover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onmouseup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onpause",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onplay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onplaying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onprogress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onratechange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onreset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onresize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onscroll",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onseeked",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onseeking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onselect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onshow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onstalled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onsubmit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onsuspend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ontimeupdate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ontoggle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onvolumechange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onwaiting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#onwheel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Event_Handler" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#optgroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#optimum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#option",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#output",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#p",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#param",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#pattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#picture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#placeholder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#pre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#progress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#q",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#rb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#readonly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#required",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#rows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#rowspan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#rp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#rt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#rtc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ruby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#samp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#script",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Scripting" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#section",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Section" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#select",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#selected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#size",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#small",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#span",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#spellcheck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#src",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#srclang",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#step",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#strong",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#style",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Document_Metadata" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#style_attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#sub",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#summary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Interactive" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#sup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#tabindex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#table",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#tbody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#td",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#template",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Scripting" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#textarea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Form" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#tfoot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#th",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#thead",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Document_Metadata" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#title_attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#tr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Tabular_Data" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#track",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#translate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Global" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#u",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#ul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Grouping_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#var",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#video",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Embedded_Content" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#wbr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Text-level_Semantic" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+}, {
+  "@id" : "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#wrap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/renangermano/ontologies/2020/6/html-ontology#Attribute" ]
+} ]

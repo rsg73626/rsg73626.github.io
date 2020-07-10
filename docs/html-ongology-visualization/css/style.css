@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    --ontology-color: white;
+    --class-color: #D0A600;
+    --individual-color: #884983;
+    --background-color: #212930;
+
+    width: 100%;
+    background-color: var(--background-color);
+    
+    font-family: "Arial";
+    color: white;
+
+    cursor: default;
+}
+
+nav {
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--background-color);
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 1px solid white;
+
+    display: flex;
+    flex-direction: line;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    width: 10%;
+    height: 50px;
+
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a:active, a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: var(--background-color);
+    background-color: white;
+}
+
+h2 {
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
+}
+
+h2, h3 {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+p {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+p a, p a:active, p a:visited {
+    color: lightblue;
+}
+
+#legend {
+    width: 300px;
+    margin: auto;
+}
+
+th, td {
+    border: white solid 2px;
+}
+
+#legend th, #legend tr {
+    height: 35px;
+}
+
+#legend td {
+    text-align: center;
+}
+
+#legend #yellow, #legend #purple {
+    height: 20px;
+    border-radius: 5px;
+}
+
+#legend #yellow {
+    color: var(--class-color);
+    background-color: var(--class-color);
+}
+
+#legend #purple {
+    color: var(--individual-color);
+    background-color: var(--individual-color);
+}
+
+.background-ontology {
+    stroke-width: 2px;
+    stroke: var(--ontology-color);
+    fill: var(--background-color);
+}
+
+.label-ontology {
+    fill: var(--ontology-color);
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.line-ontology {
+    stroke-width: 2px;
+    stroke: var(--ontology-color);
+}
+
+.background-class {
+    stroke-width: 2px;
+    stroke: var(--class-color);
+    fill: var(--background-color);
+}
+
+.label-class {
+    fill: var(--class-color);
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.line-class {
+    stroke-width: 2px;
+    stroke: var(--class-color);
+}
+
+.background-individual {
+    stroke-width: 2px;
+    stroke: var(--individual-color);
+    fill: var(--background-color);
+}
+
+.label-individual {
+    fill: white;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.line-individual {
+    stroke-width: 2px;
+    stroke: var(--individual-color);
+}
+
+#trees, #individual {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#trees #individual {
+    width: 600px;
+}
+
+svg {
+    border: 2px dashed white;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid white;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a, a:active, a:visited {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 30px;
+}
